@@ -1,0 +1,85 @@
+$conversations-tab-width = 500px
+
+.c-conversations
+  font-weight: 200
+
+  .search
+    height: 40px
+    border-bottom: 1px solid #b2b2b2
+    border-right: 1px solid #b2b2b2
+    text-align: center
+    right: -1px
+    position: relative
+
+    input
+      width: $conversations-tab-width - 100px
+
+  input
+    background-color: #f6f7f9
+    border-radius: 3px
+    border-style: none
+    font-size: 14px
+    height: 24px
+    line-height: 24px
+    padding: 0 28px
+    outline: none
+    margin-top: 8px
+    width: $conversations-tab-width * 2
+    max-width: 500px
+    box-sizing: border-box
+    text-align: center
+
+    &:focus::-webkit-input-placeholder
+      color: transparent
+
+  .conversations-tab
+    width: $conversations-tab-width
+    box-sizing: border-box
+    position: absolute
+    height: calc(100% - 100px)
+    border-right: none
+    top: 0px
+    bottom: 0
+    left: 0
+    overflow-y: scroll
+    margin-top: 100px
+    overflow-x: hidden
+
+  .analytics-pane
+    width: calc(100% - 500px)
+    padding: 30px
+    box-sizing: border-box
+    text-align: center
+    overflow: scroll
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    overflow-y: scroll
+    margin-top: 100px
+
+    .select-a-convo
+      text-align: center
+      margin-bottom: 10px
+
+    button
+      background: #0084ff
+      color: #fff
+      font-size: 20px
+      border: none
+      outline: none
+      border-radius: 10px
+      width: 350px
+      height: 50px
+      margin: 0 auto
+      display: block
+
+      &:hover
+        cursor: pointer
+
+      &:focus
+        outline: none
+
+    .conversation-title
+      margin-bottom: 20px
+      display: block

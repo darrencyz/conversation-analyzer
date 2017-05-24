@@ -1,0 +1,54 @@
+{
+  "name": "minerva-metrics",
+  "version": "1.0.0",
+  "description": "Conversation Analytics",
+  "main": "index.ls",
+  "scripts": {
+    "test": "mocha --compilers ls:livescript",
+    "start": "lsc index.ls",
+    "db": "psql -f database_scripts/db_setup.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisjluc/MinervaMetrics"
+  },
+  "author": "Andy Tu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisjluc/MinervaMetrics/issues"
+  },
+  "homepage": "https://github.com/chrisjluc/MinervaMetrics",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "livescript": "^1.5.0",
+    "livescript-loader": "^0.1.5",
+    "mocha": "^3.1.2",
+    "pug": "^0.1.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^2.6.1",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1"
+  },
+  "dependencies": {
+    "async": "^2.1.2",
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "chart.js": "^1.1.1",
+    "config": "^1.24.0",
+    "cors": "^2.8.1",
+    "indico.io": "^0.10.5",
+    "json-loader": "^0.5.4",
+    "pg": "^6.1.0",
+    "react-chartjs-2": "^1.4.0",
+    "react-facebook-login-component": "^0.6.0",
+    "react-modal-dialog": "^4.0.2",
+    "react-spinjs": "^3.0.0",
+    "request": "^2.75.0"
+  }
+}
